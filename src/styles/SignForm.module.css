@@ -1,0 +1,35 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px; 
+  align-items: center;
+}
+
+.title {
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.input {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  width: 150px;
+  font-size: 14px;
+}
+
+.button {
+  background-color: dodgerblue;
+  width: 150px;
+  border: dodgerblue;
+  border-radius: 15px;
+  height: 5%;
+  color: white;
+  font-family: 'MontHeavy';
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
