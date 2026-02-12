@@ -1,0 +1,1540 @@
+[00:00:00.641] Server  LOG     ✓ Ready in 419ms
+[00:00:21.088] Server  LOG     ✓ Compiled in 3ms
+[00:00:35.843] Server  LOG     ✓ Compiled in 6ms
+[00:00:35.949] Browser ERROR   ./hackatweet/frontend/src/components/Home.js:17:7
+Parsing ecmascript source code failed
+  15 |         <div className={styles.middleHeader}>RIGHT HEADER</div>
+  16 |         <div
+> 17 |       </div>
+     |       ^
+  18 |     </div>
+  19 |   );
+  20 | }
+
+Expression expected
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+[00:00:35.949] Browser ERROR   ./hackatweet/frontend/src/components/Home.js:17:8
+Parsing ecmascript source code failed
+  15 |         <div className={styles.middleHeader}>RIGHT HEADER</div>
+  16 |         <div
+> 17 |       </div>
+     |        ^^^^^
+  18 |     </div>
+  19 |   );
+  20 | }
+
+Unterminated regexp literal
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+[00:00:37.068] Server  LOG     ✓ Compiled in 4ms
+[00:00:41.243] Server  LOG     ✓ Compiled in 2ms
+[00:00:41.305] Browser ERROR   Warning: Received `%s` for a non-boolean attribute `%s`.
+
+If you want to write it to the DOM, pass a string instead: %s="%s" or %s={value.toString()}.%s true className className true className 
+    at div
+    at div
+    at div
+    at Home
+    at HomePage
+    at MyApp (http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__0a81404c._.js:758:27)
+    at PathnameContextProviderAdapter (http://localhost:3000/_next/static/chunks/e7f20_next_dist_shared_lib_c7c4916d._.js:6576:23)
+    at PagesDevOverlayErrorBoundary (http://localhost:3000/_next/static/chunks/e7f20_next_dist_e1c760b1._.js:1159:27)
+    at PagesDevOverlayBridge (http://localhost:3000/_next/static/chunks/e7f20_next_dist_e1c760b1._.js:2037:26)
+    at Container (http://localhost:3000/_next/static/chunks/e7f20_next_dist_client_77d7854e._.js:3573:27)
+    at AppContainer (http://localhost:3000/_next/static/chunks/e7f20_next_dist_client_77d7854e._.js:3710:26)
+    at Root (http://localhost:3000/_next/static/chunks/e7f20_next_dist_client_77d7854e._.js:3936:27)
+[00:00:43.068] Server  LOG     ✓ Compiled in 5ms
+[00:00:43.176] Browser ERROR   ./hackatweet/frontend/src/components/Home.js:16:27
+Parsing ecmascript source code failed
+  14 |       <div className={styles.contentRight}>
+  15 |         <div className={styles.middleHeader}>RIGHT HEADER</div>
+> 16 |         <div className={}></div>
+     |                           ^
+  17 |       </div>
+  18 |     </div>
+  19 |   );
+
+Expression expected
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+[00:00:43.176] Browser ERROR   ./hackatweet/frontend/src/components/Home.js:16:28
+Parsing ecmascript source code failed
+  14 |       <div className={styles.contentRight}>
+  15 |         <div className={styles.middleHeader}>RIGHT HEADER</div>
+> 16 |         <div className={}></div>
+     |                            ^^^^^
+  17 |       </div>
+  18 |     </div>
+  19 |   );
+
+Unterminated regexp literal
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+[00:00:48.421] Server  LOG     ✓ Compiled in 3ms
+[00:00:54.047] Server  LOG     ✓ Compiled in 3ms
+[00:00:54.156] Browser ERROR   ./hackatweet/frontend/src/components/Home.js:16:43
+Parsing ecmascript source code failed
+  14 |       <div className={styles.contentRight}>
+  15 |         <div className={styles.middleHeader}>RIGHT HEADER</div>
+> 16 |         <div className={styles.hashtags}>{</div>
+     |                                           ^
+  17 |       </div>
+  18 |     </div>
+  19 |   );
+
+Expression expected
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+[00:00:54.156] Browser ERROR   ./hackatweet/frontend/src/components/Home.js:16:44
+Parsing ecmascript source code failed
+  14 |       <div className={styles.contentRight}>
+  15 |         <div className={styles.middleHeader}>RIGHT HEADER</div>
+> 16 |         <div className={styles.hashtags}>{</div>
+     |                                            ^^^^^
+  17 |       </div>
+  18 |     </div>
+  19 |   );
+
+Unterminated regexp literal
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+[00:00:56.070] Browser ERROR   ./hackatweet/frontend/src/components/Home.js:17:7
+Parsing ecmascript source code failed
+  15 |         <div className={styles.middleHeader}>RIGHT HEADER</div>
+  16 |         <div className={styles.hashtags}>{/</div>
+> 17 |       </div>
+     |       ^
+  18 |     </div>
+  19 |   );
+  20 | }
+
+Expression expected
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+[00:00:56.070] Browser ERROR   ./hackatweet/frontend/src/components/Home.js:17:8
+Parsing ecmascript source code failed
+  15 |         <div className={styles.middleHeader}>RIGHT HEADER</div>
+  16 |         <div className={styles.hashtags}>{/</div>
+> 17 |       </div>
+     |        ^^^^^
+  18 |     </div>
+  19 |   );
+  20 | }
+
+Unterminated regexp literal
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+[00:00:57.006] Server  LOG     ✓ Compiled in 2ms
+[00:00:57.115] Browser ERROR   ./hackatweet/frontend/src/components/Home.js:23:1
+Parsing ecmascript source code failed
+  21 | 
+  22 | export default Home;
+> 23 | 
+     | ^
+
+Unterminated block comment
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+[00:01:05.621] Browser ERROR   ./hackatweet/frontend/src/components/Home.js:23:1
+Parsing ecmascript source code failed
+  21 | 
+  22 | export default Home;
+> 23 | 
+     | ^
+
+Unterminated block comment
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+[00:01:07.897] Server  LOG     ✓ Compiled in 2ms
+[00:01:08.005] Browser ERROR   ./hackatweet/frontend/src/components/Home.js:16:70
+Parsing ecmascript source code failed
+  14 |       <div className={styles.contentRight}>
+  15 |         <div className={styles.middleHeader}>RIGHT HEADER</div>
+> 16 |         <div className={styles.hashtags}>{/*insérer les trends ici*/</div>
+     |                                                                      ^
+  17 |       </div>
+  18 |     </div>
+  19 |   );
+
+Expression expected
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+[00:01:08.005] Browser ERROR   ./hackatweet/frontend/src/components/Home.js:16:71
+Parsing ecmascript source code failed
+  14 |       <div className={styles.contentRight}>
+  15 |         <div className={styles.middleHeader}>RIGHT HEADER</div>
+> 16 |         <div className={styles.hashtags}>{/*insérer les trends ici*/</div>
+     |                                                                       ^^^^^
+  17 |       </div>
+  18 |     </div>
+  19 |   );
+
+Unterminated regexp literal
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+[00:01:10.042] Server  LOG     ✓ Compiled in 3ms
+[00:05:36.646] Server  LOG     ✓ Compiled in 5ms
+[00:05:40.290] Server  LOG     ✓ Compiled in 1ms
+[00:05:58.598] Server  LOG     ✓ Compiled in 1ms
+[00:06:03.417] Server  LOG     ✓ Compiled in 2ms
+[00:06:07.180] Server  LOG     ✓ Compiled in 2ms
+[00:06:53.109] Server  LOG     ✓ Compiled in 6ms
+[00:06:53.219] Browser ERROR   ./hackatweet/frontend/src/styles/Home.module.css:15:1
+Parsing CSS source code failed
+  13 |     justify-content: space-between;
+  14 |     broder
+> 15 | }
+     | ^
+  16 | .middleContent {
+  17 |     display: flex;
+  18 |     flex-direction: column;
+
+Unexpected end of input
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/styles/Home.module.css
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/styles/Home.module.css
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+[00:06:57.041] Server  LOG     ✓ Compiled in 5ms
+[00:07:01.952] Server  LOG     ✓ Compiled in 1ms
+[00:07:15.498] Server  LOG     ✓ Compiled in 2ms
+[00:07:51.743] Server  LOG     ✓ Compiled in 3ms
+[00:07:56.093] Server  LOG     ✓ Compiled in 4ms
+[00:08:08.221] Server  LOG     ✓ Compiled in 3ms
+[00:08:12.036] Server  LOG     ✓ Compiled in 4ms
+[00:08:26.735] Server  LOG     ✓ Compiled in 2ms
+[00:08:32.305] Server  LOG     ✓ Compiled in 3ms
+[00:08:32.414] Browser ERROR   ./hackatweet/frontend/src/styles/Home.module.css:27:1
+Parsing CSS source code failed
+  25 |     border-left: solid 1px grey;
+  26 |     width
+> 27 | }
+     | ^
+
+Unexpected end of input
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/styles/Home.module.css
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/styles/Home.module.css
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+[00:08:34.126] Server  LOG     ✓ Compiled in 3ms
+[00:13:52.147] Server  LOG     ✓ Compiled in 2ms
+[00:14:01.830] Server  LOG     ✓ Compiled in 1ms
+[00:14:04.966] Server  LOG     ✓ Compiled in 2ms
+[00:14:31.972] Server  LOG     ✓ Compiled in 2ms
+[00:14:41.760] Server  LOG     ✓ Compiled in 2ms
+[00:14:48.944] Server  LOG     ✓ Compiled in 2ms
+[00:19:05.252] Server  LOG     ✓ Compiled in 5ms
+[00:19:05.360] Browser ERROR   ./hackatweet/frontend/src/components/Home.js:11:58
+Parsing ecmascript source code failed
+   9 |       </div>
+  10 |       <div className={styles.contentMiddle}>
+> 11 |         <div className={styles.middleHeader}>MIDDLE HEAD{</div>
+     |                                                          ^
+  12 |         {/* ajouter les tweets ici*/}
+  13 |       </div>
+  14 |       <div className={styles.contentRight}>
+
+Expression expected
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+[00:19:05.360] Browser ERROR   ./hackatweet/frontend/src/components/Home.js:11:59
+Parsing ecmascript source code failed
+   9 |       </div>
+  10 |       <div className={styles.contentMiddle}>
+> 11 |         <div className={styles.middleHeader}>MIDDLE HEAD{</div>
+     |                                                           ^^^^^
+  12 |         {/* ajouter les tweets ici*/}
+  13 |       </div>
+  14 |       <div className={styles.contentRight}>
+
+Unterminated regexp literal
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+[00:19:06.634] Server  LOG     ✓ Compiled in 4ms
+[00:19:08.756] Server  LOG     ✓ Compiled in 3ms
+[00:19:08.864] Browser ERROR   ./hackatweet/frontend/src/components/Home.js:20:1
+Parsing ecmascript source code failed
+  18 |     </div>
+  19 |   );
+> 20 | }
+     | ^
+  21 |
+  22 | export default Home;
+  23 |
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+[00:19:15.041] Browser ERROR   ./hackatweet/frontend/src/components/Home.js:20:1
+Parsing ecmascript source code failed
+  18 |     </div>
+  19 |   );
+> 20 | }
+     | ^
+  21 |
+  22 | export default Home;
+  23 |
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+[00:19:17.457] Server  LOG     ✓ Compiled in 3ms
+[00:19:54.845] Server  LOG     ✓ Compiled in 4ms
+[00:19:54.953] Browser ERROR   ./hackatweet/frontend/src/components/Home.js:3:1
+Parsing ecmascript source code failed
+  1 | import styles from "../styles/Home.module.css";
+  2 | import
+> 3 | function Home() {
+    | ^^^^^^^^
+  4 |   return (
+  5 |     <div className={styles.mainContainer}>
+  6 |       <div className={styles.contentLeft}>
+
+Expected 'from', got 'function'
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+[00:20:00.050] Server  LOG     ✓ Compiled in 3ms
+[00:20:00.159] Browser ERROR   ./hackatweet/frontend/src/components/Home.js:3:1
+Parsing ecmascript source code failed
+  1 | import styles from "../styles/Home.module.css";
+  2 | import logo from 
+> 3 | function Home() {
+    | ^^^^^^^^
+  4 |   return (
+  5 |     <div className={styles.mainContainer}>
+  6 |       <div className={styles.contentLeft}>
+
+Unexpected token `function`. Expected a string literal
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+[00:20:01.872] Server  ERROR   ⨯ ./hackatweet/frontend/src/components/Home.js:2:1
+Module not found: Can't resolve ''
+  1 | import styles from "../styles/Home.module.css";
+> 2 | import logo from ""
+    | ^^^^^^^^^^^^^^^^^^^
+  3 | function Home() {
+  4 |   return (
+  5 |     <div className={styles.mainContainer}>
+
+
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:01.873] Server  ERROR   ⨯ ./hackatweet/frontend/src/components/Home.js:2:1
+Module not found: Can't resolve ''
+  1 | import styles from "../styles/Home.module.css";
+> 2 | import logo from ""
+    | ^^^^^^^^^^^^^^^^^^^
+  3 | function Home() {
+  4 |   return (
+  5 |     <div className={styles.mainContainer}>
+
+
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:01.874] Server  ERROR   ⨯ ./hackatweet/frontend/src/components/Home.js:2:1
+Module not found: Can't resolve ''
+  1 | import styles from "../styles/Home.module.css";
+> 2 | import logo from ""
+    | ^^^^^^^^^^^^^^^^^^^
+  3 | function Home() {
+  4 |   return (
+  5 |     <div className={styles.mainContainer}>
+
+
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:01.874] Server  ERROR   ⨯ ./hackatweet/frontend/src/components/Home.js:2:1
+Module not found: Can't resolve ''
+  1 | import styles from "../styles/Home.module.css";
+> 2 | import logo from ""
+    | ^^^^^^^^^^^^^^^^^^^
+  3 | function Home() {
+  4 |   return (
+  5 |     <div className={styles.mainContainer}>
+
+
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:01.907] Server  LOG     ✓ Compiled in 11ms
+[00:20:02.016] Browser ERROR   ./hackatweet/frontend/src/components/Home.js:2:1
+Module not found: Can't resolve ''
+  1 | import styles from "../styles/Home.module.css";
+> 2 | import logo from ""
+    | ^^^^^^^^^^^^^^^^^^^
+  3 | function Home() {
+  4 |   return (
+  5 |     <div className={styles.mainContainer}>
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+https://nextjs.org/docs/messages/module-not-found
+[00:20:03.509] Server  ERROR   ⨯ ./hackatweet/frontend/src/components/Home.js:2:1
+Module not found: Can't resolve '../'
+  1 | import styles from "../styles/Home.module.css";
+> 2 | import logo from "../"
+    | ^^^^^^^^^^^^^^^^^^^^^^
+  3 | function Home() {
+  4 |   return (
+  5 |     <div className={styles.mainContainer}>
+
+
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:03.510] Server  ERROR   ⨯ ./hackatweet/frontend/src/components/Home.js:2:1
+Module not found: Can't resolve '../'
+  1 | import styles from "../styles/Home.module.css";
+> 2 | import logo from "../"
+    | ^^^^^^^^^^^^^^^^^^^^^^
+  3 | function Home() {
+  4 |   return (
+  5 |     <div className={styles.mainContainer}>
+
+
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:03.510] Server  ERROR   ⨯ ./hackatweet/frontend/src/components/Home.js:2:1
+Module not found: Can't resolve '../'
+  1 | import styles from "../styles/Home.module.css";
+> 2 | import logo from "../"
+    | ^^^^^^^^^^^^^^^^^^^^^^
+  3 | function Home() {
+  4 |   return (
+  5 |     <div className={styles.mainContainer}>
+
+
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:03.511] Server  ERROR   ⨯ ./hackatweet/frontend/src/components/Home.js:2:1
+Module not found: Can't resolve '../'
+  1 | import styles from "../styles/Home.module.css";
+> 2 | import logo from "../"
+    | ^^^^^^^^^^^^^^^^^^^^^^
+  3 | function Home() {
+  4 |   return (
+  5 |     <div className={styles.mainContainer}>
+
+
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:03.553] Server  LOG     ✓ Compiled in 4ms
+[00:20:03.662] Browser ERROR   ./hackatweet/frontend/src/components/Home.js:2:1
+Module not found: Can't resolve '../'
+  1 | import styles from "../styles/Home.module.css";
+> 2 | import logo from "../"
+    | ^^^^^^^^^^^^^^^^^^^^^^
+  3 | function Home() {
+  4 |   return (
+  5 |     <div className={styles.mainContainer}>
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+https://nextjs.org/docs/messages/module-not-found
+[00:20:04.894] Server  ERROR   ⨯ ./hackatweet/frontend/src/components/Home.js:2:1
+Module not found: Can't resolve '../assets'
+  1 | import styles from "../styles/Home.module.css";
+> 2 | import logo from "../assets"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | function Home() {
+  4 |   return (
+  5 |     <div className={styles.mainContainer}>
+
+
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:04.894] Server  ERROR   ⨯ ./hackatweet/frontend/src/components/Home.js:2:1
+Module not found: Can't resolve '../assets'
+  1 | import styles from "../styles/Home.module.css";
+> 2 | import logo from "../assets"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | function Home() {
+  4 |   return (
+  5 |     <div className={styles.mainContainer}>
+
+
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:04.895] Server  ERROR   ⨯ ./hackatweet/frontend/src/components/Home.js:2:1
+Module not found: Can't resolve '../assets'
+  1 | import styles from "../styles/Home.module.css";
+> 2 | import logo from "../assets"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | function Home() {
+  4 |   return (
+  5 |     <div className={styles.mainContainer}>
+
+
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:04.895] Server  ERROR   ⨯ ./hackatweet/frontend/src/components/Home.js:2:1
+Module not found: Can't resolve '../assets'
+  1 | import styles from "../styles/Home.module.css";
+> 2 | import logo from "../assets"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | function Home() {
+  4 |   return (
+  5 |     <div className={styles.mainContainer}>
+
+
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:04.937] Server  LOG     ✓ Compiled in 4ms
+[00:20:05.044] Browser ERROR   ./hackatweet/frontend/src/components/Home.js:2:1
+Module not found: Can't resolve '../assets'
+  1 | import styles from "../styles/Home.module.css";
+> 2 | import logo from "../assets"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | function Home() {
+  4 |   return (
+  5 |     <div className={styles.mainContainer}>
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+https://nextjs.org/docs/messages/module-not-found
+[00:20:06.184] Server  ERROR   ⨯ ./hackatweet/frontend/src/components/Home.js:2:1
+Module not found: Can't resolve '../assets/'
+  1 | import styles from "../styles/Home.module.css";
+> 2 | import logo from "../assets/"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | function Home() {
+  4 |   return (
+  5 |     <div className={styles.mainContainer}>
+
+
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:06.184] Server  ERROR   ⨯ ./hackatweet/frontend/src/components/Home.js:2:1
+Module not found: Can't resolve '../assets/'
+  1 | import styles from "../styles/Home.module.css";
+> 2 | import logo from "../assets/"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | function Home() {
+  4 |   return (
+  5 |     <div className={styles.mainContainer}>
+
+
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:06.185] Server  ERROR   ⨯ ./hackatweet/frontend/src/components/Home.js:2:1
+Module not found: Can't resolve '../assets/'
+  1 | import styles from "../styles/Home.module.css";
+> 2 | import logo from "../assets/"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | function Home() {
+  4 |   return (
+  5 |     <div className={styles.mainContainer}>
+
+
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:06.185] Server  ERROR   ⨯ ./hackatweet/frontend/src/components/Home.js:2:1
+Module not found: Can't resolve '../assets/'
+  1 | import styles from "../styles/Home.module.css";
+> 2 | import logo from "../assets/"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | function Home() {
+  4 |   return (
+  5 |     <div className={styles.mainContainer}>
+
+
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:06.228] Server  LOG     ✓ Compiled in 3ms
+[00:20:06.338] Browser ERROR   ./hackatweet/frontend/src/components/Home.js:2:1
+Module not found: Can't resolve '../assets/'
+  1 | import styles from "../styles/Home.module.css";
+> 2 | import logo from "../assets/"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | function Home() {
+  4 |   return (
+  5 |     <div className={styles.mainContainer}>
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+https://nextjs.org/docs/messages/module-not-found
+[00:20:08.718] Server  ERROR   ⨯ ./hackatweet/frontend/src/components/Home.js:2:1
+Module not found: Can't resolve '../assets/t'
+  1 | import styles from "../styles/Home.module.css";
+> 2 | import logo from "../assets/t"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | function Home() {
+  4 |   return (
+  5 |     <div className={styles.mainContainer}>
+
+
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:08.719] Server  ERROR   ⨯ ./hackatweet/frontend/src/components/Home.js:2:1
+Module not found: Can't resolve '../assets/t'
+  1 | import styles from "../styles/Home.module.css";
+> 2 | import logo from "../assets/t"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | function Home() {
+  4 |   return (
+  5 |     <div className={styles.mainContainer}>
+
+
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:08.719] Server  ERROR   ⨯ ./hackatweet/frontend/src/components/Home.js:2:1
+Module not found: Can't resolve '../assets/t'
+  1 | import styles from "../styles/Home.module.css";
+> 2 | import logo from "../assets/t"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | function Home() {
+  4 |   return (
+  5 |     <div className={styles.mainContainer}>
+
+
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:08.720] Server  ERROR   ⨯ ./hackatweet/frontend/src/components/Home.js:2:1
+Module not found: Can't resolve '../assets/t'
+  1 | import styles from "../styles/Home.module.css";
+> 2 | import logo from "../assets/t"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | function Home() {
+  4 |   return (
+  5 |     <div className={styles.mainContainer}>
+
+
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:08.761] Server  LOG     ✓ Compiled in 3ms
+[00:20:08.868] Browser ERROR   ./hackatweet/frontend/src/components/Home.js:2:1
+Module not found: Can't resolve '../assets/t'
+  1 | import styles from "../styles/Home.module.css";
+> 2 | import logo from "../assets/t"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | function Home() {
+  4 |   return (
+  5 |     <div className={styles.mainContainer}>
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+https://nextjs.org/docs/messages/module-not-found
+[00:20:12.333] Server  ERROR   ⨯ ./hackatweet/frontend/src/components/Home.js:2:1
+Module not found: Can't resolve '../assets/twitter'
+  1 | import styles from "../styles/Home.module.css";
+> 2 | import logo from "../assets/twitter"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | function Home() {
+  4 |   return (
+  5 |     <div className={styles.mainContainer}>
+
+
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:12.334] Server  ERROR   ⨯ ./hackatweet/frontend/src/components/Home.js:2:1
+Module not found: Can't resolve '../assets/twitter'
+  1 | import styles from "../styles/Home.module.css";
+> 2 | import logo from "../assets/twitter"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | function Home() {
+  4 |   return (
+  5 |     <div className={styles.mainContainer}>
+
+
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:12.334] Server  ERROR   ⨯ ./hackatweet/frontend/src/components/Home.js:2:1
+Module not found: Can't resolve '../assets/twitter'
+  1 | import styles from "../styles/Home.module.css";
+> 2 | import logo from "../assets/twitter"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | function Home() {
+  4 |   return (
+  5 |     <div className={styles.mainContainer}>
+
+
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:12.335] Server  ERROR   ⨯ ./hackatweet/frontend/src/components/Home.js:2:1
+Module not found: Can't resolve '../assets/twitter'
+  1 | import styles from "../styles/Home.module.css";
+> 2 | import logo from "../assets/twitter"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | function Home() {
+  4 |   return (
+  5 |     <div className={styles.mainContainer}>
+
+
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:12.376] Server  LOG     ✓ Compiled in 3ms
+[00:20:12.486] Browser ERROR   ./hackatweet/frontend/src/components/Home.js:2:1
+Module not found: Can't resolve '../assets/twitter'
+  1 | import styles from "../styles/Home.module.css";
+> 2 | import logo from "../assets/twitter"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | function Home() {
+  4 |   return (
+  5 |     <div className={styles.mainContainer}>
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+https://nextjs.org/docs/messages/module-not-found
+[00:20:15.544] Server  ERROR   ⨯ ./hackatweet/frontend/src/components/Home.js:2:1
+Module not found: Can't resolve '../assets/twitter-'
+  1 | import styles from "../styles/Home.module.css";
+> 2 | import logo from "../assets/twitter-"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | function Home() {
+  4 |   return (
+  5 |     <div className={styles.mainContainer}>
+
+
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:15.544] Server  ERROR   ⨯ ./hackatweet/frontend/src/components/Home.js:2:1
+Module not found: Can't resolve '../assets/twitter-'
+  1 | import styles from "../styles/Home.module.css";
+> 2 | import logo from "../assets/twitter-"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | function Home() {
+  4 |   return (
+  5 |     <div className={styles.mainContainer}>
+
+
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:15.544] Server  ERROR   ⨯ ./hackatweet/frontend/src/components/Home.js:2:1
+Module not found: Can't resolve '../assets/twitter-'
+  1 | import styles from "../styles/Home.module.css";
+> 2 | import logo from "../assets/twitter-"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | function Home() {
+  4 |   return (
+  5 |     <div className={styles.mainContainer}>
+
+
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:15.545] Server  ERROR   ⨯ ./hackatweet/frontend/src/components/Home.js:2:1
+Module not found: Can't resolve '../assets/twitter-'
+  1 | import styles from "../styles/Home.module.css";
+> 2 | import logo from "../assets/twitter-"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | function Home() {
+  4 |   return (
+  5 |     <div className={styles.mainContainer}>
+
+
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:15.587] Server  LOG     ✓ Compiled in 3ms
+[00:20:15.698] Browser ERROR   ./hackatweet/frontend/src/components/Home.js:2:1
+Module not found: Can't resolve '../assets/twitter-'
+  1 | import styles from "../styles/Home.module.css";
+> 2 | import logo from "../assets/twitter-"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | function Home() {
+  4 |   return (
+  5 |     <div className={styles.mainContainer}>
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+https://nextjs.org/docs/messages/module-not-found
+[00:20:18.160] Server  LOG     ✓ Compiled in 13ms
+[00:20:26.327] Server  LOG     ✓ Compiled in 3ms
+[00:20:28.895] Server  LOG     ✓ Compiled in 4ms
+[00:20:29.003] Browser ERROR   ./hackatweet/frontend/src/components/Home.js:7:35
+Parsing ecmascript source code failed
+   5 |     <div className={styles.mainContainer}>
+   6 |       <div className={styles.contentLeft}>
+>  7 |         <img src="{logo} alt="LOGO"></img>
+     |                                   ^^^^^^^^
+   8 |         <div className={styles.profile}>PROFILE</div>
+   9 |       </div>
+  10 |       <div className={styles.contentMiddle}>
+
+Unterminated string constant
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+[00:20:30.201] Server  LOG     ✓ Compiled in 5ms
+[00:20:38.004] Server  ERROR   ⨯ ./hackatweet/frontend/src/components/Home.js:2:1
+Module not found: Can't resolve './assets/twitter-xxl.png'
+  1 | import styles from "../styles/Home.module.css";
+> 2 | import logo from "./assets/twitter-xxl.png"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | function Home() {
+  4 |   return (
+  5 |     <div className={styles.mainContainer}>
+
+
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:38.005] Server  ERROR   ⨯ ./hackatweet/frontend/src/components/Home.js:2:1
+Module not found: Can't resolve './assets/twitter-xxl.png'
+  1 | import styles from "../styles/Home.module.css";
+> 2 | import logo from "./assets/twitter-xxl.png"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | function Home() {
+  4 |   return (
+  5 |     <div className={styles.mainContainer}>
+
+
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:38.006] Server  ERROR   ⨯ ./hackatweet/frontend/src/components/Home.js:2:1
+Module not found: Can't resolve './assets/twitter-xxl.png'
+  1 | import styles from "../styles/Home.module.css";
+> 2 | import logo from "./assets/twitter-xxl.png"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | function Home() {
+  4 |   return (
+  5 |     <div className={styles.mainContainer}>
+
+
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:38.006] Server  ERROR   ⨯ ./hackatweet/frontend/src/components/Home.js:2:1
+Module not found: Can't resolve './assets/twitter-xxl.png'
+  1 | import styles from "../styles/Home.module.css";
+> 2 | import logo from "./assets/twitter-xxl.png"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | function Home() {
+  4 |   return (
+  5 |     <div className={styles.mainContainer}>
+
+
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:38.007] Server  ERROR   ⨯ ./hackatweet/frontend/src/components/Home.js:2:1
+Module not found: Can't resolve './assets/twitter-xxl.png'
+  1 | import styles from "../styles/Home.module.css";
+> 2 | import logo from "./assets/twitter-xxl.png"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | function Home() {
+  4 |   return (
+  5 |     <div className={styles.mainContainer}>
+
+
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:38.007] Server  ERROR   ⨯ ./hackatweet/frontend/src/components/Home.js:2:1
+Module not found: Can't resolve './assets/twitter-xxl.png'
+  1 | import styles from "../styles/Home.module.css";
+> 2 | import logo from "./assets/twitter-xxl.png"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | function Home() {
+  4 |   return (
+  5 |     <div className={styles.mainContainer}>
+
+
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:38.008] Server  ERROR   ⨯ ./hackatweet/frontend/src/components/Home.js:2:1
+Module not found: Can't resolve './assets/twitter-xxl.png'
+  1 | import styles from "../styles/Home.module.css";
+> 2 | import logo from "./assets/twitter-xxl.png"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | function Home() {
+  4 |   return (
+  5 |     <div className={styles.mainContainer}>
+
+
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:38.008] Server  ERROR   ⨯ ./hackatweet/frontend/src/components/Home.js:2:1
+Module not found: Can't resolve './assets/twitter-xxl.png'
+  1 | import styles from "../styles/Home.module.css";
+> 2 | import logo from "./assets/twitter-xxl.png"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | function Home() {
+  4 |   return (
+  5 |     <div className={styles.mainContainer}>
+
+
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:20:38.042] Server  LOG     ✓ Compiled in 9ms
+[00:20:38.152] Browser ERROR   ./hackatweet/frontend/src/components/Home.js:2:1
+Module not found: Can't resolve './assets/twitter-xxl.png'
+  1 | import styles from "../styles/Home.module.css";
+> 2 | import logo from "./assets/twitter-xxl.png"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | function Home() {
+  4 |   return (
+  5 |     <div className={styles.mainContainer}>
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+https://nextjs.org/docs/messages/module-not-found
+[00:20:43.910] Server  LOG     ✓ Compiled in 8ms
+[00:20:52.290] Server  LOG     ✓ Compiled in 8ms
+[00:20:52.363] Browser ERROR   uncaughtError: ReferenceError: logo is not defined
+[00:20:52.363] Browser ERROR   uncaughtError: ReferenceError: logo is not defined
+[00:20:52.363] Browser ERROR   The above error occurred in the <Home> component:
+
+    at Home (http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__4c813b12._.js?id=%255Bproject%255D%252Fhackatweet%252Ffrontend%252Fsrc%252Fcomponents%252FHome.js+%255Bclient%255D+%2528ecmascript%2529:22:30)
+    at HomePage
+    at MyApp (http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__0a81404c._.js:758:27)
+    at PathnameContextProviderAdapter (http://localhost:3000/_next/static/chunks/e7f20_next_dist_shared_lib_c7c4916d._.js:6576:23)
+    at PagesDevOverlayErrorBoundary (http://localhost:3000/_next/static/chunks/e7f20_next_dist_e1c760b1._.js:1159:27)
+    at PagesDevOverlayBridge (http://localhost:3000/_next/static/chunks/e7f20_next_dist_e1c760b1._.js:2037:26)
+    at Container (http://localhost:3000/_next/static/chunks/e7f20_next_dist_client_77d7854e._.js:3573:27)
+    at AppContainer (http://localhost:3000/_next/static/chunks/e7f20_next_dist_client_77d7854e._.js:3710:26)
+    at Root (http://localhost:3000/_next/static/chunks/e7f20_next_dist_client_77d7854e._.js:3936:27)
+
+React will try to recreate this component tree from scratch using the error boundary you provided, PagesDevOverlayErrorBoundary.
+[00:20:58.647] Server  LOG     ✓ Compiled in 4ms
+[00:20:58.755] Browser ERROR   ./hackatweet/frontend/src/components/Home.js:7:21
+Parsing ecmascript source code failed
+   5 |     <div className={styles.mainContainer}>
+   6 |       <div className={styles.contentLeft}>
+>  7 |         <img src={} alt="LOGO"></img>
+     |                     ^^^
+   8 |         <div className={styles.profile}>PROFILE</div>
+   9 |       </div>
+  10 |       <div className={styles.contentMiddle}>
+
+Expected '</', got 'ident'
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+[00:20:59.799] Server  LOG     ✓ Compiled in 3ms
+[00:21:06.743] Server  LOG     ✓ Compiled in 2ms
+[00:21:13.509] Server  LOG     ✓ Compiled in 3ms
+[00:21:17.564] Server  LOG     ✓ Compiled in 3ms
+[00:21:17.672] Browser ERROR   ./hackatweet/frontend/src/components/Home.js:7:21
+Parsing ecmascript source code failed
+   5 |     <div className={styles.mainContainer}>
+   6 |       <div className={styles.contentLeft}>
+>  7 |         <img src={} alt="LOGO"></img>
+     |                     ^^^
+   8 |         <div className={styles.profile}>PROFILE</div>
+   9 |       </div>
+  10 |       <div className={styles.contentMiddle}>
+
+Expected '</', got 'ident'
+
+Import traces:
+  Browser:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+
+  SSR:
+    ./hackatweet/frontend/src/components/Home.js
+    ./hackatweet/frontend/src/pages/home.js
+[00:21:21.936] Server  LOG     ✓ Compiled in 4ms
+[00:21:22.013] Browser ERROR   Warning: Received `%s` for a non-boolean attribute `%s`.
+
+If you want to write it to the DOM, pass a string instead: %s="%s" or %s={value.toString()}.%s true src src true src 
+    at img
+    at div
+    at div
+    at Home
+    at HomePage
+    at MyApp (http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__0a81404c._.js:758:27)
+    at PathnameContextProviderAdapter (http://localhost:3000/_next/static/chunks/e7f20_next_dist_shared_lib_c7c4916d._.js:6576:23)
+    at PagesDevOverlayErrorBoundary (http://localhost:3000/_next/static/chunks/e7f20_next_dist_e1c760b1._.js:1159:27)
+    at PagesDevOverlayBridge (http://localhost:3000/_next/static/chunks/e7f20_next_dist_e1c760b1._.js:2037:26)
+    at Container (http://localhost:3000/_next/static/chunks/e7f20_next_dist_client_77d7854e._.js:3573:27)
+    at AppContainer (http://localhost:3000/_next/static/chunks/e7f20_next_dist_client_77d7854e._.js:3710:26)
+    at Root (http://localhost:3000/_next/static/chunks/e7f20_next_dist_client_77d7854e._.js:3936:27)
+[00:21:23.522] Server  LOG     ✓ Compiled in 2ms

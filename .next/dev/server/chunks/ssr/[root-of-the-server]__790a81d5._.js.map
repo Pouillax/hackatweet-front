@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 10, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/jules/Desktop/hackatweet/frontend/src/pages/_app.js"],"sourcesContent":["function MyApp({ Component, pageProps }) {\r\n  return <Component {...pageProps} />\r\n}\r\n\r\nexport default MyApp;"],"names":[],"mappings":";;;;;;AAAA,SAAS,MAAM,EAAE,SAAS,EAAE,SAAS,EAAE;IACrC,qBAAO,qKAAC;QAAW,GAAG,SAAS;;;;;;AACjC;uCAEe"}}]
+}

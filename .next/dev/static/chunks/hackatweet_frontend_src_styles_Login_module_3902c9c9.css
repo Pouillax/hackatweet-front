@@ -1,0 +1,68 @@
+/* [project]/hackatweet/frontend/src/styles/Login.module.css [client] (css) */
+@font-face {
+  font-family: MontHeavy;
+  src: url("../media/mont-heavy.4fb7b07f.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.Login-module__gJlhNG__mainContainer {
+  flex-direction: row;
+  display: flex;
+}
+
+.Login-module__gJlhNG__loginLeft {
+  background-color: #0ff;
+  background-image: url("../media/login-background.6cb333a1.png");
+  background-position: center;
+  background-size: cover;
+  width: 40%;
+  height: 100vh;
+}
+
+.Login-module__gJlhNG__loginRight {
+  color: #fff;
+  background-color: #141c25;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 60%;
+  padding-left: 5%;
+  font-family: MontHeavy;
+  display: flex;
+}
+
+.Login-module__gJlhNG__mainTitle {
+  width: 50%;
+  font-size: 50px;
+}
+
+.Login-module__gJlhNG__secondTitle {
+  width: 50%;
+  font-size: 23px;
+}
+
+.Login-module__gJlhNG__signUpBtn {
+  color: #fff;
+  background-color: #1e90ff;
+  border: #1e90ff;
+  border-radius: 15px;
+  width: 25%;
+  height: 5%;
+  font-family: MontHeavy;
+}
+
+.Login-module__gJlhNG__signInBtn {
+  color: #fff;
+  background-color: #141c25;
+  border: 1px solid gray;
+  border-radius: 15px;
+  width: 25%;
+  height: 5%;
+  font-family: MontHeavy;
+}
+
+.Login-module__gJlhNG__headerLogo {
+  max-width: 10%;
+}
+
+/*# sourceMappingURL=hackatweet_frontend_src_styles_Login_module_3902c9c9.css.map*/

@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/jules/Desktop/hackatweet/frontend/src/styles/Home.module.css"],"sourcesContent":[".mainContainer {\r\n    display: flex;\r\n    justify-content: space-between;\r\n    width: 100%;\r\n    height: 100vh;\r\n    background-color: #151d26;\r\n}\r\n\r\n.contentLeft {\r\n    display: flex;\r\n    flex-direction: column;\r\n    justify-content: space-between;\r\n    border-right: solid 1px grey;\r\n    width: 20%;\r\n}\r\n.middleContent {\r\n    display: flex;\r\n    flex-direction: column;\r\n    justify-content: flex-start;\r\n}\r\n\r\n.contentRight {\r\n    display: flex;\r\n    flex-direction: column;\r\n    justify-content: space-between;\r\n    border-left: solid 1px grey;\r\n    width: 25%;\r\n}"],"names":[],"mappings":"AAAA;;;;;;;;AAQA;;;;;;;;AAOA;;;;;;AAMA"}}]
+}

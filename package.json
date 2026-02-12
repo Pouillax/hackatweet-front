@@ -5,16 +5,16 @@
   "dependencies": {
     "@reduxjs/toolkit": "^2.11.2",
     "moment": "^2.30.1",
+    "next": "^16.1.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-redux": "^9.2.0",
-    "react-router-dom": "^6.21.0",
-    "react-scripts": "5.0.1"
+    "react-redux": "^9.2.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "dev": "react-scripts start",
-    "build": "react-scripts build"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "browserslist": {
     "production": [

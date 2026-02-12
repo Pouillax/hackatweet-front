@@ -1,0 +1,32 @@
+/* [project]/hackatweet/frontend/src/styles/Home.module.css [client] (css) */
+.Home-module__rp5a1G__mainContainer {
+  background-color: #151d26;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.Home-module__rp5a1G__contentLeft {
+  border-right: 1px solid gray;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20%;
+  display: flex;
+}
+
+.Home-module__rp5a1G__middleContent {
+  flex-direction: column;
+  justify-content: flex-start;
+  display: flex;
+}
+
+.Home-module__rp5a1G__contentRight {
+  border-left: 1px solid gray;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25%;
+  display: flex;
+}
+
+/*# sourceMappingURL=hackatweet_frontend_src_styles_Home_module_02a215e1.css.map*/
