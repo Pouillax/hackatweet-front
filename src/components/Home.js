@@ -1,12 +1,12 @@
 import styles from '../styles/Home.module.css'
-
+import logo from '../assets/twitter-xxl.png'
 function Home() {
 
     return(
         <div className={styles.mainContainer}>
             <div className={styles.loginLeft}></div>
             <div className={styles.loginRight}>
-                <div className={styles.headerLogo}><img src='./assets/'></img></div>
+                <div ><img src={logo} className={styles.headerLogo} alt='Logo'></img></div>
                 <h1 className={styles.mainTitle}>See what's happening</h1>
                 <h3 className={styles.secondTitle}>Join Hackatweet today.</h3>
                 <button className={styles.signUpBtn}>Sign up</button>

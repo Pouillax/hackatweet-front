@@ -16,6 +16,9 @@
     background-color: aqua;
     width: 40%;
     height: 100vh;
+    background-image: url('../assets/login-background.png');
+    background-size: cover;
+    background-position: center;
 }
 
 .loginRight {
@@ -23,7 +26,7 @@
     color: white;
     display: flex;
     flex-direction: column;
-    padding-bottom: 30%;
+    
     justify-content: space-around;
     width: 60%;
     font-family: 'MontHeavy';
@@ -57,4 +60,7 @@
     height: 5%;
     color: white;
     font-family: 'MontHeavy';
+}
+.headerLogo {
+    max-width: 10%;
 }
