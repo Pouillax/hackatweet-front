@@ -1,6 +1,8 @@
 import { useState } from "react";
 import styles from "../styles/Home.module.css";
 import Modal from "../components/Modal";
+import SignUpForm from "./Signup";
+import SignInForm from "./Signin";
 
 function Home() {
   const [activeModal, setActiveModal] = useState(null);
@@ -48,8 +50,8 @@ function Home() {
         isOpen={activeModal === "signup"}
         onClose={() => setActiveModal(null)}
       >
-        <h2>Create your Hackatweet account</h2>
-        <p>Formulaire 1</p>
+        <SignUpForm onSubmit={() => setActiveModal(null)} />
+
       </Modal>
 
       {/* Modal Sign In */}
@@ -57,8 +59,8 @@ function Home() {
         isOpen={activeModal === "signin"}
         onClose={() => setActiveModal(null)}
       >
-        <h2>Welcome back to Hackatweet</h2>
-        <p>Formulaire 2</p>
+        <SignInForm onSubmit={() => setActiveModal(null)} />
+
       </Modal>
     </div>
   );

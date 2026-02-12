@@ -1,14 +1,16 @@
+import styles from "../styles/Modal.module.css";
+
 function Modal({ isOpen, onClose, children }) {
   if (!isOpen) return null;
 
   return (
-    <div className="overlay" onClick={onClose}>
+    <div className={styles.overlay} onClick={onClose}>
       <div
-        className="modal"
+        className={styles.modalBox}
         onClick={(e) => e.stopPropagation()}
       >
         {children}
-        <button onClick={onClose}>Fermer</button>
+        
       </div>
     </div>
   );
