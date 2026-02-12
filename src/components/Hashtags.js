@@ -1,6 +1,6 @@
 import styles from "../styles/Home.module.css";
 
-function Home() {
+function Hashtags() {
   return (
     <div className={styles.mainContainer}>
       <div className={styles.contentLeft}>
@@ -8,7 +8,7 @@ function Home() {
         <div className={styles.profile}>PROFILE</div>
       </div>
       <div className={styles.contentMiddle}>
-        <div className={styles.middleHeader}>Home{/*insérer le composant Tweet ici*/}</div>
+        <div className={styles.middleHeader}>Hashtags{/*insérer le composant Tweet ici*/}</div>
         {/* ajouter les lastTweets ici*/}
       </div>
       <div className={styles.contentRight}>
@@ -19,4 +19,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Hashtags;

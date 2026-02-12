@@ -1,0 +1,19 @@
+
+@font-face {
+  font-family: 'Mont-Heavy';
+  src: url('/fonts/Mont-Heavy.otf');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;  
+  padding: 0;
+  font-family: 'Verdana', sans-serif;
+  background-color: #15202b;
+  color: white;
+}
