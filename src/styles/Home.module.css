@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'MontHeavy';
+    src: url(../fonts/mont-heavy.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.loginLeft {
+    background-color: aqua;
+    width: 40%;
+    height: 100vh;
+}
+
+.loginRight {
+    background-color: #141c25;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30%;
+    justify-content: space-around;
+    width: 60%;
+    font-family: 'MontHeavy';
+    padding-left: 5%;
+}
+
+.mainTitle {
+    font-size: 50px;
+    width: 50%;
+}
+
+.secondTitle {
+    font-size: 23px;
+    width: 50%
+}
+.signUpBtn {
+    background-color: dodgerblue;
+    width: 25%;
+    border: dodgerblue;
+    border-radius: 15px;
+    height: 5%;
+    color: white;
+    font-family: 'MontHeavy';
+}
+
+.signInBtn {
+    background-color: #141c25;
+    width: 25%;
+    border: 1px solid grey;
+    border-radius: 15px;
+    height: 5%;
+    color: white;
+    font-family: 'MontHeavy';
+}
