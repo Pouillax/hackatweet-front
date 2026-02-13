@@ -3,8 +3,11 @@ import styles from "../styles/Login.module.css";
 import Modal from "./Modal";
 import SignUpForm from "./Signup";
 import SignInForm from "./Signin";
+import { useRouter } from "next/navigation";
 
-const API_URL = "http://localhost:3001"; // adapte le port de ton backend
+const API_URL = "http://localhost:3001"; 
+
+
 
 async function signup(payload) {
   const res = await fetch(`${API_URL}/users/signup`, {
@@ -25,6 +28,8 @@ async function signin(payload) {
 }
 
 function Login() {
+  const router = useRouter();
+
   const [activeModal, setActiveModal] = useState(null);
 
   const handleSignUp = async (payload) => {
@@ -33,7 +38,7 @@ function Login() {
     localStorage.setItem("token", data.token);
     localStorage.setItem("firstname", data.firstname);
     localStorage.setItem("username", data.username);
-    setActiveModal(null);
+    router.push("/home");
   } else {
     alert(data.error);
   }
@@ -45,7 +50,7 @@ const handleSignIn = async (payload) => {
     localStorage.setItem("token", data.token);
     localStorage.setItem("firstname", data.firstname);
     localStorage.setItem("username", data.username);
-    setActiveModal(null);
+    router.push("/home");
   } else {
     alert(data.error);
   }
