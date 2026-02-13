@@ -39,8 +39,30 @@ export default function Tweet() {
       token,
       firstname,
       username,
-      avatarUrl: "/assets/egg.png",
+      avatarUrl: "src/assets/egg.png",
     });
+  }, []);
+
+    useEffect(() => {
+    const fetchTweets = async () => {
+      try {
+        const res = await fetch(`${API_URL}/tweets`);
+        const data = await res.json();
+
+        if (data.result) {
+          setTweets(
+            data.tweets.map((t) => ({
+              ...t,
+              createdAt: new Date(t.createdAt),
+            }))
+          );
+        }
+      } catch (err) {
+        setError("Impossible de charger les tweets");
+      }
+    };
+
+    fetchTweets();
   }, []);
 
   const canTweet =

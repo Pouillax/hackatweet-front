@@ -39,6 +39,7 @@ function Login() {
     localStorage.setItem("firstname", data.firstname);
     localStorage.setItem("username", data.username);
     router.push("/home");
+    console.log("REPONSE AUTH:", data);
   } else {
     alert(data.error);
   }
