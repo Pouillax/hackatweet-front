@@ -1,4 +1,6 @@
-import { useEffect, useMemo, useState } from "react";
+"use client";
+
+import { useEffect, useState } from "react";
 import styles from "../styles/Tweet.module.css";
 
 const MAX_TWEET_LEN = 280;
@@ -14,66 +16,119 @@ function timeAgo(date) {
   return `il y a ${days}j`;
 }
 
-export default function Feed() {
-  const currentUser = useMemo(
-    () => ({
-      firstName: "Marie",
-      username: "marie123",
-      avatarUrl: "/assets/egg.png",
-    }),
-    []
-  );
+const API_URL = "http://localhost:3001";
 
+export default function Tweet() {
+  const [currentUser, setCurrentUser] = useState(null);
   const [text, setText] = useState("");
   const [tweets, setTweets] = useState([]);
   const [error, setError] = useState("");
   const [isPosting, setIsPosting] = useState(false);
 
-  const remaining = MAX_TWEET_LEN - text.length;
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    const firstname = localStorage.getItem("firstname");
+    const username = localStorage.getItem("username");
+
+    if (!token || !username) {
+      setError("Tu n'es pas connecté.");
+      return;
+    }
+
+    setCurrentUser({
+      token,
+      firstname,
+      username,
+      avatarUrl: "/assets/egg.png",
+    });
+  }, []);
+
   const canTweet =
     text.trim().length > 0 &&
     text.length <= MAX_TWEET_LEN &&
-    !isPosting;
+    !isPosting &&
+    !!currentUser;
 
-  const handleTweet = (e) => {
+  const handleTweet = async (e) => {
     e.preventDefault();
+    setError("");
 
     const trimmed = text.trim();
-    if (!trimmed) return;
+    if (!trimmed || !currentUser) return;
 
-    const newTweet = {
+    setIsPosting(true);
+
+    // affichage immédiat
+    const optimisticTweet = {
       id: crypto.randomUUID(),
       content: trimmed,
-      author: currentUser,
+      author: {
+        firstname: currentUser.firstname,
+        username: currentUser.username,
+        avatarUrl: currentUser.avatarUrl,
+      },
       createdAt: new Date(),
+      _optimistic: true,
     };
 
-    setTweets((prev) => [newTweet, ...prev]);
+    setTweets((prev) => [optimisticTweet, ...prev]);
     setText("");
+
+    try {
+      // call to backend
+      const res = await fetch(`${API_URL}/tweets`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${currentUser.token}`,
+        },
+        body: JSON.stringify({ content: trimmed }),
+      });
+
+      const data = await res.json();
+
+      if (!data.result) {
+        throw new Error(data.error || "Tweet failed");
+      }
+
+      // renvoie le tweet envoyé par l'API
+      setTweets((prev) =>
+        prev.map((t) =>
+          t.id === optimisticTweet.id
+            ? {
+                id: data.tweet.id ?? t.id,
+                content: data.tweet.content ?? t.content,
+                author: data.tweet.author ?? t.author,
+                createdAt: data.tweet.createdAt ? new Date(data.tweet.createdAt) : t.createdAt,
+              }
+            : t
+        )
+      );
+    } catch (err) {
+      
+      setTweets((prev) => prev.filter((t) => t.id !== optimisticTweet.id));
+      setText(trimmed);
+      setError(err.message || "Impossible de tweeter");
+    } finally {
+      setIsPosting(false);
+    }
   };
 
-  useEffect(() => {
-    const t = setInterval(() => {}, 60000);
-    return () => clearInterval(t);
-  }, []);
+  if (!currentUser) {
+    return <div className={styles.container}>{error || "Chargement..."}</div>;
+  }
 
   return (
     <div className={styles.container}>
       <form className={styles.form} onSubmit={handleTweet}>
-        <img
-          src={currentUser.avatarUrl}
-          alt="avatar"
-          className={styles.avatar}
-        />
+        <img src={currentUser.avatarUrl} alt="avatar" className={styles.avatar} />
 
         <div className={styles.inputContainer}>
           <input
             type="text"
             placeholder="What's up?"
             value={text}
-            onChange={(e) =>
-              setText(e.target.value.slice(0, MAX_TWEET_LEN))
-            }
+            onChange={(e) => setText(e.target.value.slice(0, MAX_TWEET_LEN))}
             className={styles.input}
           />
 
@@ -82,44 +137,27 @@ export default function Feed() {
               {text.length}/{MAX_TWEET_LEN}
             </span>
 
-            <button
-              type="submit"
-              disabled={!canTweet}
-              className={styles.button}
-            >
-              Tweet
+            <button type="submit" disabled={!canTweet} className={styles.button}>
+              {isPosting ? "..." : "Tweet"}
             </button>
           </div>
 
-          {error && (
-            <div className={styles.error}>{error}</div>
-          )}
+          {error && <div className={styles.error}>{error}</div>}
         </div>
       </form>
 
       <div className={styles.feedList}>
         {tweets.map((t) => (
-          <div key={t.id} className={styles.tweetCard}>
-            <img
-              src={t.author.avatarUrl}
-              alt="avatar"
-              className={styles.avatar}
-            />
+          <div key={t.id} className={styles.tweetCard} style={{ opacity: t._optimistic ? 0.7 : 1 }}>
+            <img src={t.author.avatarUrl} alt="avatar" className={styles.avatar} />
 
             <div className={styles.tweetContent}>
               <div className={styles.tweetHeader}>
-                <strong>{t.author.firstName}</strong>
-                <span className={styles.username}>
-                  @{t.author.username}
-                </span>
-                <span className={styles.time}>
-                  · {timeAgo(t.createdAt)}
-                </span>
+                <strong>{t.author.firstname}</strong>
+                <span className={styles.username}>@{t.author.username}</span>
+                <span className={styles.time}>· {timeAgo(t.createdAt)}</span>
               </div>
-
-              <p className={styles.tweetText}>
-                {t.content}
-              </p>
+              <p className={styles.tweetText}>{t.content}</p>
             </div>
           </div>
         ))}

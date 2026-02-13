@@ -1,4 +1,5 @@
 import styles from "../styles/Home.module.css";
+import Tweet from "./Tweet";
 
 function Home() {
   return (
@@ -8,8 +9,8 @@ function Home() {
         <div className={styles.profile}>PROFILE</div>
       </div>
       <div className={styles.contentMiddle}>
-        <div className={styles.middleHeader}>Home{/*insérer le composant Tweet ici*/}</div>
-        {/* ajouter les lastTweets ici*/}
+        <div className={styles.middleHeader}>Home</div>
+        <Tweet/>
       </div>
       <div className={styles.contentRight}>
         <div className={styles.middleHeader}>Trends</div>
