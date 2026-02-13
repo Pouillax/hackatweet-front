@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import styles from "../styles/Feed.module.css";
+import styles from "../styles/Tweet.module.css";
 
 const MAX_TWEET_LEN = 280;
 

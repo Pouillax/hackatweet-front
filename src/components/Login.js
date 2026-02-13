@@ -4,8 +4,53 @@ import Modal from "./Modal";
 import SignUpForm from "./Signup";
 import SignInForm from "./Signin";
 
+const API_URL = "http://localhost:3001"; // adapte le port de ton backend
+
+async function signup(payload) {
+  const res = await fetch(`${API_URL}/users/signup`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload),
+  });
+  return res.json();
+}
+
+async function signin(payload) {
+  const res = await fetch(`${API_URL}/users/signin`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload),
+  });
+  return res.json();
+}
+
 function Login() {
   const [activeModal, setActiveModal] = useState(null);
+
+  const handleSignUp = async (payload) => {
+  const data = await signup(payload);
+  if (data.result) {
+    localStorage.setItem("token", data.token);
+    localStorage.setItem("firstname", data.firstname);
+    localStorage.setItem("username", data.username);
+    setActiveModal(null);
+  } else {
+    alert(data.error);
+  }
+};
+
+const handleSignIn = async (payload) => {
+  const data = await signin(payload);
+  if (data.result) {
+    localStorage.setItem("token", data.token);
+    localStorage.setItem("firstname", data.firstname);
+    localStorage.setItem("username", data.username);
+    setActiveModal(null);
+  } else {
+    alert(data.error);
+  }
+};
+
 
   return (
     <div className={styles.mainContainer}>
@@ -50,7 +95,7 @@ function Login() {
         isOpen={activeModal === "signup"}
         onClose={() => setActiveModal(null)}
       >
-        <SignUpForm onSubmit={() => setActiveModal(null)} />
+        <SignUpForm onSubmit={handleSignUp} />
 
       </Modal>
 
@@ -59,7 +104,7 @@ function Login() {
         isOpen={activeModal === "signin"}
         onClose={() => setActiveModal(null)}
       >
-        <SignInForm onSubmit={() => setActiveModal(null)} />
+        <SignInForm onSubmit={handleSignIn} />
 
       </Modal>
     </div>

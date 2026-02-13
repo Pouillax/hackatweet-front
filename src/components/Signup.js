@@ -10,7 +10,7 @@ import styles from "../styles/SignForm.module.css";
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const payload = { firstName, username, password };
+    const payload = { firstname: firstName, username, password };
 
     if (onSubmit) onSubmit(payload);
   };
