@@ -33,7 +33,7 @@
 .contentRight {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     border-left: solid 1px grey;
     width: 25%;
     padding: 2%;
@@ -44,6 +44,7 @@
     flex-direction: column;
     border-bottom: 1px solid grey;
     width: 100%;
+    margin-bottom: 5%;
 }
 
 .searchBar {

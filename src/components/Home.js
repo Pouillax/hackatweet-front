@@ -1,6 +1,6 @@
 import styles from "../styles/Home.module.css";
 import Tweet from "./Tweet";
-
+import Trends from "./Trends";
 function Home() {
   return (
     <div className={styles.mainContainer}>
@@ -14,7 +14,7 @@ function Home() {
       </div>
       <div className={styles.contentRight}>
         <div className={styles.middleHeader}>Trends</div>
-        <div className={styles.hashtags}>{/*insérer les trends ici*/}</div>
+        <div className={styles.hashtags}><Trends/></div>
       </div>
     </div>
   );

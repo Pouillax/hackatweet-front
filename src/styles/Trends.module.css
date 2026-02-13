@@ -1,0 +1,49 @@
+.container {
+  background-color: #192734;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.noTrends {
+  color: #8899a6;
+  font-size: 14px;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.trendsList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.trendItem {
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.trendItem:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.hashtag {
+  display: block;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.count {
+  display: block;
+  font-size: 13px;
+  color: #8899a6;
+}
