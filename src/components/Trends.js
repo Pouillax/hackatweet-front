@@ -7,7 +7,7 @@ function Trends() {
   const [trends, setTrends] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/tweets/trends/all")
+    fetch("http://localhost:3001/tweets/trends/all")
       .then((response) => response.json())
       .then((data) => {
         if (data.result) {
