@@ -8,11 +8,11 @@ function Hashtags() {
         <div className={styles.profile}>PROFILE</div>
       </div>
       <div className={styles.contentMiddle}>
-        <div className={styles.middleHeader}>Hashtags{/*insérer le composant Tweet ici*/}</div>
-        {/* ajouter les lastTweets ici*/}
+        <div className={styles.middleHeader}><h3>Hashtags</h3><input type="search" className={styles.searchBar}></input></div>
+        {/* ajouter les lastTweets avec hashtags correspondant ici*/}
       </div>
       <div className={styles.contentRight}>
-        <div className={styles.middleHeader}>Trends</div>
+        <div>Trends</div>
         <div className={styles.hashtags}>{/*insérer les trends ici*/}</div>
       </div>
     </div>
